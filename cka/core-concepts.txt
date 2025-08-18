@@ -1,5 +1,25 @@
-Kubernetes a deux types principaux de nodes : {{c1::Master Nodes}} et {{c2::Worker Nodes}}.    core;architecture;roles
+Kubernetes a deux types principaux de nodes : {{c1::Master Nodes}} et {{c2::Worker Nodes}}.
 
-Les {{c1::Worker Nodes}} hébergent les applications sous forme de conteneurs et exécutent les charges de travail.    core;architecture;roles
+Les {{c1::Worker Nodes}} hébergent les applications sous forme de conteneurs et exécutent les charges de travail.
 
-Les {{c1::Master Nodes}} gèrent, planifient, contrôlent et surveillent les nodes et les charges de travail.    core;architecture;roles
+Les {{c1::Master Nodes}} gèrent, planifient, contrôlent et surveillent les nodes et les charges de travail.
+
+The {{c1::Open Container Initiative (OCI)}} defines standards for container image formats and runtimes, ensuring interoperability between tools like Docker and containerd.
+
+The {{c1::Container Runtime Interface (CRI)}} is a Kubernetes API that allows the kubelet to communicate with container runtimes like containerd or CRI-O.
+
+{{c1::Dockershim}} was a temporary layer in Kubernetes that allowed Docker to work as a runtime, but it was deprecated in favor of direct CRI integration with containerd.
+
+{{c1::ctr}} is a low-level CLI tool from the containerd project, primarily used for debugging and managing containers directly in containerd.
+
+{{c1::nerdctl}} is a Docker-compatible CLI for containerd, designed to mimic Docker's user experience while working natively with containerd.
+
+{{c1::crictl}} is a CLI tool from the Kubernetes community for interacting with CRI-compatible container runtimes like containerd or CRI-O.
+
+Docker uses {{c1::containerd}} under the hood as its default container runtime, while Kubernetes can use containerd directly via CRI.
+
+The {{c1::dockershim}} was removed in Kubernetes v1.24, requiring users to migrate to CRI-compatible runtimes like containerd or CRI-O.
+
+{{c1::nerdctl}} supports features like building images, managing networks, and volumes, similar to Docker, but is optimized for containerd.
+
+{{c1::crictl}} is mainly used for debugging Kubernetes nodes and inspecting containers managed by the kubelet.
