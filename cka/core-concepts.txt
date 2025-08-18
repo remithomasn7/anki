@@ -1,0 +1,5 @@
+Kubernetes a deux types principaux de nodes : {{c1::Master Nodes}} et {{c2::Worker Nodes}}.    core;architecture;roles
+
+Les {{c1::Worker Nodes}} hébergent les applications sous forme de conteneurs et exécutent les charges de travail.    core;architecture;roles
+
+Les {{c1::Master Nodes}} gèrent, planifient, contrôlent et surveillent les nodes et les charges de travail.    core;architecture;roles
