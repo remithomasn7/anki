@@ -1,13 +1,13 @@
-Kubernetes has two main types of nodes: {{c1::Master Nodes}} and {{c2::Worker Nodes}}; tags:CKA:CoreConcepts
-{{c1::Worker Nodes}} host applications as containers and execute workloads; tags:CKA:CoreConcepts
-{{c1::Master Nodes}} manage, schedule, control, and monitor nodes and workloads; tags:CKA:CoreConcepts
-The {{c1::Open Container Initiative (OCI)}} defines standards for container image formats and runtimes; tags:CKA:CoreConcepts
-The {{c1::Container Runtime Interface (CRI)}} is a Kubernetes API for communication between kubelet and container runtimes; tags:CKA:CoreConcepts
-{{c1::Dockershim}} was a temporary layer in Kubernetes to allow Docker as a runtime, deprecated in favor of CRI; tags:CKA:CoreConcepts
-{{c1::ctr}} is a low-level CLI tool for containerd, mainly used for debugging; tags:CKA:CoreConcepts
-{{c1::nerdctl}} is a Docker-compatible CLI for containerd; tags:CKA:CoreConcepts
-{{c1::crictl}} is a CLI tool for interacting with CRI-compatible runtimes; tags:CKA:CoreConcepts
-Docker uses {{c1::containerd}} as its default container runtime; tags:CKA:CoreConcepts
-The {{c1::dockershim}} was removed in Kubernetes v1.24; tags:CKA:CoreConcepts
-{{c1::nerdctl}} supports building images, managing networks, and volumes; tags:CKA:CoreConcepts
-{{c1::crictl}} is mainly used for debugging Kubernetes nodes; tags:CKA:CoreConcepts
+#separator:tab
+#html:true
+#tags column:3
+Pour lister tous les pods dans tous les namespaces :	<code>kubectl get pods -A</code>	
+Kubernetes has two main types of nodes: {{c1::Master Nodes}} and {{c2::Worker Nodes}}		tags:CKA:CoreConcepts
+{{c1::Worker Nodes}} host applications as containers and execute workloads		tags:CKA:CoreConcepts
+{{c1::Master Nodes}} manage, schedule, control, and monitor nodes and workloads		tags:CKA:CoreConcepts
+The {{c1::Container Runtime Interface (CRI)}} is a Kubernetes API for communication between kubelet and container runtimes		tags:CKA:CoreConcepts
+{{c1::Dockershim}} was a temporary layer in Kubernetes to allow Docker as a runtime, deprecated in favor of CRI		tags:CKA:CoreConcepts
+{{c1::nerdctl}} is a Docker-compatible CLI for containerd		tags:CKA:CoreConcepts
+{{c1::crictl}} is a CLI tool for interacting with CRI-compatible runtimes		tags:CKA:CoreConcepts
+The {{c1::dockershim}} was removed in Kubernetes v1.24		tags:CKA:CoreConcepts
+{{c1::crictl}} is mainly used for debugging Kubernetes nodes		tags:CKA:CoreConcepts
